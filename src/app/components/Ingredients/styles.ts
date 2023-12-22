@@ -5,7 +5,7 @@ export const Container = styled.section`
   padding-bottom: 160px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 500;
 

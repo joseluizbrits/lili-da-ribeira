@@ -1,3 +1,4 @@
+import Cod from "./components/Cod";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Gallery />
       <Ingredients />
+      <Cod />
     </>
   );
 }

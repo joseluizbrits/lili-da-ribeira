@@ -26,6 +26,10 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   li {
     list-style: none;
   }
