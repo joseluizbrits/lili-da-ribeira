@@ -12,5 +12,5 @@ export const Logo = styled.span`
   font-size: 1.75rem;
   line-height: 0.05rem;
   color: var(--green4);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
 `;
