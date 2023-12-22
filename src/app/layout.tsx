@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Grandstander } from "next/font/google";
-import StylesProvider from "./lib/StylesProvider";
-
-const inter = Grandstander({ subsets: ["latin"], weight: ["400", "500"] });
+import { grandstander } from "./lib/fonts";
+import StylesProvider from "./styles/StylesProvider";
 
 export const metadata: Metadata = {
   title: "Lili da Ribeira",
@@ -16,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={grandstander.className}>
         <StylesProvider>{children}</StylesProvider>
       </body>
     </html>

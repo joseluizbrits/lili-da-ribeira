@@ -1,6 +1,6 @@
 "use client";
-import StyledComponentsRegistry from "./registry";
-import GlobalStyles from "../globalStyles";
+import StyledComponentsRegistry from "../lib/registry";
+import GlobalStyles from "./globalStyles";
 
 function StylesProvider({ children }: { children: React.ReactNode }) {
   return (
