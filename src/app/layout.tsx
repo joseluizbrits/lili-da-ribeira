@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Grandstander } from "next/font/google";
+import StylesProvider from "./lib/StylesProvider";
 
 const inter = Grandstander({ subsets: ["latin"], weight: ["400", "500"] });
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StylesProvider>{children}</StylesProvider>
+      </body>
     </html>
   );
 }
