@@ -21,8 +21,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    background-color: var(--green3);
     scroll-behavior: smooth;
     overflow-x: hidden;
+  }
+
+  li {
+    list-style: none;
   }
 `;
 
