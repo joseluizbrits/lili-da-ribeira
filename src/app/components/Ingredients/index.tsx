@@ -7,7 +7,7 @@ import { ingredients } from "@/app/utils/ingredients";
 function Ingredients() {
   return (
     <Container>
-      <Title>Ingredients</Title>
+      <Title>Ingredientes</Title>
       <IngredientsList>
         {ingredients.map(({ id, name, desc, icon, arrow }) => (
           <li key={id} id={id} className={nunito.className}>

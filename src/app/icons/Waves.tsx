@@ -1,6 +1,9 @@
-function Waves() {
+function Waves({ rotate }: { rotate?: boolean }) {
+  const deg = rotate ? "180deg" : "0deg";
+
   return (
     <svg
+      style={{ rotate: deg }}
       width="375"
       height="200"
       viewBox="0 0 375 200"

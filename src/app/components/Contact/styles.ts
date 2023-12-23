@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: linear-gradient(to bottom, #fff 55%, var(--green4));
+  background: linear-gradient(to bottom, #fff 35%, var(--green4));
   height: 600px;
 
   display: flex;
@@ -16,7 +16,7 @@ export const Content = styled.div`
   align-items: center;
   gap: 24px;
 
-  margin-top: -64px;
+  margin-top: -120px;
 `;
 
 export const Title = styled.h2`

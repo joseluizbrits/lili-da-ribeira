@@ -5,6 +5,7 @@ import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Ingredients from "./components/Ingredients";
+import Questions from "./components/Questions";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Cod />
       <About />
       <Contact />
+      <Questions />
     </>
   );
 }
