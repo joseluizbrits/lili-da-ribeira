@@ -31,7 +31,7 @@ function Questions() {
       <Container>
         <Title>Alguma dúvida?</Title>
         <FAQ>
-          {questions.map(({ id, question, answer }) => (
+          {questions.map(({ id, question, answer }, index) => (
             <div key={id}>
               <Question
                 id={id}
@@ -44,7 +44,7 @@ function Questions() {
                   <p className={nunito.className}>{answer}</p>
                 </div>
               </Question>
-              <Separator />
+              {index < questions.length - 1 && <Separator />}
             </div>
           ))}
         </FAQ>

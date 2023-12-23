@@ -18,7 +18,7 @@ export const FAQ = styled.ul`
   padding-top: 60px;
 `;
 
-export const Question = styled.div`
+export const Question = styled.section`
   display: grid;
   grid-template-columns: 1fr max-content;
   justify-content: space-between;
@@ -78,7 +78,7 @@ export const Question = styled.div`
 
 export const Separator = styled.hr`
   border: 1px solid var(--green2);
-  opacity: 0.5;
+  opacity: 0.2;
   margin-bottom: 16px;
 `;
 
