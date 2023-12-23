@@ -1,12 +1,12 @@
 "use client";
 
-import { MyStyles } from "./styles";
+import { Container } from "./styles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 function Gallery() {
   return (
-    <MyStyles>
+    <Container>
       <Swiper slidesPerView={1} navigation={true} modules={[Navigation]}>
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -14,7 +14,7 @@ function Gallery() {
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
-    </MyStyles>
+    </Container>
   );
 }
 

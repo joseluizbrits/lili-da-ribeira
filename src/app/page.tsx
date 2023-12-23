@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Cod from "./components/Cod";
+import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <Ingredients />
       <Cod />
       <About />
+      <Contact />
     </>
   );
 }

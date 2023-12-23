@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import arrowCircle from "../../../../public/arrow-circle.svg";
 
-export const MyStyles = styled.section`
+export const Container = styled.section`
   padding: 40px 0 126px 10px;
   overflow-x: hidden;
 
