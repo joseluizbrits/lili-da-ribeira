@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
-  /* margin-bottom: 120px; */
-`;
-
-export const Content = styled.div`
+export const Container = styled.div`
   background-color: var(--green1);
 `;
 
@@ -19,18 +15,18 @@ export const Title = styled.h2`
 
 export const FAQ = styled.ul`
   margin: 0 10px;
-`;
-
-export const Wrapper = styled.div`
-  /* AQUI TA VAZIO */
+  padding-top: 60px;
 `;
 
 export const Question = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr max-content;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 
   h3 {
+    font-size: 0.875rem;
     color: var(--green5);
     display: flex;
     align-items: center;
@@ -43,8 +39,47 @@ export const Question = styled.div`
       height: 8px;
       border-radius: 50%;
       background-color: var(--purple3);
+      margin-top: -1px;
     }
   }
+
+  svg {
+    transition: 0.3s ease-in-out;
+  }
+
+  .answer {
+    padding-left: 16px;
+    padding-bottom: 10px;
+    max-width: 35ch;
+
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .answer p {
+    font-size: 0.75rem;
+    opacity: 0;
+  }
+
+  &.active {
+    .answer {
+      height: 10vh;
+    }
+
+    .answer p {
+      opacity: 1;
+    }
+    svg {
+      rotate: 135deg;
+    }
+  }
+`;
+
+export const Separator = styled.hr`
+  border: 1px solid var(--green2);
+  opacity: 0.5;
+  margin-bottom: 16px;
 `;
 
 export const Sea = styled.div`

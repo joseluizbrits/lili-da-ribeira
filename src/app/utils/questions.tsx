@@ -2,22 +2,26 @@ const questions = [
   {
     id: "q1",
     question: "Quais são os  métodos de pagamento?",
-    answer: "",
+    answer:
+      "Cumque dignissimos ratione assumenda ducimus quidem, provident reprehenderit saepe, eveniet eius aperiam iure itaque praesentium quam ipsam cupiditate. Tempora reiciendis sunt asperiores!",
   },
   {
     id: "q2",
     question: "Como é feita a entrega?",
-    answer: "",
+    answer:
+      "Reprehenderit cumque provident sequi natus vel aliquid quos tempora qui porro dolor, vero quam alias maxime. Laboriosam officia doloribus commodi architecto iste.",
   },
   {
     id: "q3",
     question: "A massa é feita com bacalhau autêntico?",
-    answer: "",
+    answer:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores explicabo nostrum esse commodi in sequi.",
   },
   {
     id: "q4",
     question: "A outro produto além da massa?",
-    answer: "",
+    answer:
+      "Ipsa nostrum tempora omnis excepturi, inventore, veniam repudiandae molestias magni cupiditate est eveniet. Voluptatem, facilis nostrum a dignissimos illum assumenda quis vitae!",
   },
 ];
 

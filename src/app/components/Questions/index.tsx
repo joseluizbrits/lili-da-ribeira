@@ -1,41 +1,55 @@
 "use client";
 
-import {
-  Container,
-  Content,
-  FAQ,
-  Question,
-  Sea,
-  Title,
-  Wrapper,
-} from "./styles";
+import { Container, FAQ, Question, Sea, Separator, Title } from "./styles";
+
+import { nunito } from "@/app/lib/fonts";
+import { useState } from "react";
+
 import Fish from "@/app/icons/Fish";
 import Plus from "@/app/icons/Plus";
 import Waves from "@/app/icons/Waves";
 import questions from "@/app/utils/questions";
 
 function Questions() {
+  const [activeQuestion, setActiveQuestion] = useState("");
+
+  function handleQuestion(e: React.MouseEvent<HTMLElement>) {
+    if (!e.currentTarget) return;
+
+    if (e.currentTarget.id === activeQuestion) return setActiveQuestion("");
+
+    const questionId = e.currentTarget.id;
+    return setActiveQuestion(questionId);
+  }
+
   return (
-    <Container>
+    <>
       <Sea>
         <Fish />
         <Waves rotate />
       </Sea>
-      <Content>
+      <Container>
         <Title>Alguma dúvida?</Title>
         <FAQ>
-          {questions.map(({ id, question }) => (
-            <Wrapper key={id}>
-              <Question>
+          {questions.map(({ id, question, answer }) => (
+            <div key={id}>
+              <Question
+                id={id}
+                className={activeQuestion === id ? "active" : ""}
+                onClick={(e) => handleQuestion(e)}
+              >
                 <h3>{question}</h3>
                 <Plus />
+                <div className="answer">
+                  <p className={nunito.className}>{answer}</p>
+                </div>
               </Question>
-              {/* <Answer><p>{answer}</p></Answer> */}
-            </Wrapper>
+              <Separator />
+            </div>
           ))}
         </FAQ>
-      </Content>
-    </Container>
+      </Container>
+    </>
   );
 }
 
