@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     --purple3: #6900AE;
     --purple4: #4B017B;
     --purple5: #3D0960;
+    --space32: 8%;
+    --space20: 6%;
+    --font16: clamp(1rem, 2vw, 2vw);
+    --font24: clamp(1.5rem, 4vw, 4rem);
   }
 
  * {

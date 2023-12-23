@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapp = styled.div`
-  padding: 20px 20px;
+  padding: 20px var(--space20);
   background-color: var(--green1);
   display: flex;
   justify-content: space-between;
