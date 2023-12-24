@@ -1,6 +1,7 @@
 "use client";
 
 import { Container, Description, Label, Text } from "./styles";
+import Animation from "./animation";
 
 import { nunito } from "@/app/lib/fonts";
 import Image from "next/image";
@@ -10,6 +11,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 function Gallery() {
+  Animation();
+
   return (
     <Container>
       <Swiper slidesPerView={1} navigation={true} modules={[Navigation]}>

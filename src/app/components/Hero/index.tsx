@@ -2,9 +2,13 @@
 
 import { Title, Container } from "./styles";
 
+import Animation from "./animation";
+
 function Hero() {
+  Animation();
+
   return (
-    <Container>
+    <Container id="hero">
       <Title>
         <span>Delícias da Lili:</span>
         Encomendas de Massa para Bolinho de Bacalhau
