@@ -7,6 +7,30 @@ export const Container = styled.section`
   display: grid;
   overflow-x: hidden;
   position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    background: url(${wavesShort.src}) no-repeat;
+
+    grid-area: 1/1;
+  }
+
+  @media screen and (min-width: 440px) {
+    &::after {
+      min-height: 300px;
+      background: url(${wavesMiddle.src}) no-repeat;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    &::after {
+      min-height: 400px;
+      background: url(${wavesLarge.src}) no-repeat;
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -33,23 +57,5 @@ export const Title = styled.h1`
   @media screen and (min-width: 1000px) {
     padding-left: 240px;
     max-width: 26ch;
-  }
-`;
-
-export const Waves = styled.div`
-  width: 100%;
-  min-height: 200px;
-  background: url(${wavesShort.src}) no-repeat;
-
-  grid-area: 1/1;
-
-  @media screen and (min-width: 440px) {
-    min-height: 300px;
-    background: url(${wavesMiddle.src}) no-repeat;
-  }
-
-  @media screen and (min-width: 1000px) {
-    min-height: 400px;
-    background: url(${wavesLarge.src}) no-repeat;
   }
 `;

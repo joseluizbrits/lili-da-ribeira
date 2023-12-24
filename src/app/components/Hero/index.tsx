@@ -1,6 +1,6 @@
 "use client";
 
-import { Title, Container, Waves } from "./styles";
+import { Title, Container } from "./styles";
 
 function Hero() {
   return (
@@ -9,7 +9,6 @@ function Hero() {
         <span>Delícias da Lili:</span>
         Encomendas de Massa para Bolinho de Bacalhau
       </Title>
-      <Waves />
     </Container>
   );
 }
