@@ -1,6 +1,11 @@
 "use client";
 
-import { Container } from "./styles";
+import { Container, Description, Label, Text } from "./styles";
+
+import { nunito } from "@/app/lib/fonts";
+import Image from "next/image";
+import gallery from "@/app/utils/gallery";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -8,11 +13,15 @@ function Gallery() {
   return (
     <Container>
       <Swiper slidesPerView={1} navigation={true} modules={[Navigation]}>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
+        {gallery.map(({ id, img, alt }) => (
+          <SwiperSlide key={id}>
+            <Image src={img} alt={alt} fill priority />
+            <Description>
+              <Label className={nunito.className}>Muito saborosa</Label>
+              <Text>Massa com textura delicada e sabor autentico</Text>
+            </Description>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Container>
   );
