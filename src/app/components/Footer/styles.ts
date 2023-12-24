@@ -45,7 +45,7 @@ export const Media = styled.ul`
 `;
 
 export const Location = styled.div`
-  background-color: var(--p1);
+  background: linear-gradient(to bottom, var(--p1), var(--p4));
   padding-bottom: var(--space10);
 `;
 

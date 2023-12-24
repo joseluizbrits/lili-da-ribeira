@@ -1,24 +1,49 @@
 "use client";
 
 import { nunito } from "@/app/lib/fonts";
-import { Container, IngredientsList, Title } from "./styles";
+import { Container, Description, List, Name, Title } from "./styles";
 import { ingredients } from "@/app/utils/ingredients";
+import { useState } from "react";
 
 function Ingredients() {
+  const [activeItem, setActiveItem] = useState("");
+
+  function handleItem(e: React.MouseEvent<HTMLElement>) {
+    if (!e.currentTarget) return;
+
+    const item = e.currentTarget.id;
+
+    if (item === activeItem) return setActiveItem("");
+
+    return setActiveItem(item);
+  }
+
   return (
     <Container>
       <Title>Ingredientes</Title>
-      <IngredientsList>
+      <List>
         {ingredients.map(({ id, name, desc, icon, arrow }) => (
-          <li key={id} id={id} className={nunito.className}>
-            <div className="wrapp">
-              {icon}
-              <p>{name}</p>
-            </div>
-            {arrow}
+          <li key={id} className={nunito.className}>
+            <Name
+              id={id}
+              onClick={handleItem}
+              className={id === activeItem ? "active" : ""}
+            >
+              <div className="wrapp">
+                {icon}
+                <h3>{name}</h3>
+              </div>
+              {arrow}
+            </Name>
+            <Description
+              id={`${id}-desc`}
+              className={id === activeItem ? "active" : ""}
+            >
+              <p>{desc}</p>
+            </Description>
           </li>
         ))}
-      </IngredientsList>
+      </List>
     </Container>
   );
 }
