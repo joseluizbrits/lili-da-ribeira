@@ -62,7 +62,7 @@ export const ImageWrapper = styled.div`
     margin-right: var(--space10);
 
     p {
-      background-color: var(--green4);
+      background-color: var(--p4);
       color: #f29764;
 
       bottom: -62%;

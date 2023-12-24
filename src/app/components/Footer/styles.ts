@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.footer`
-  background-color: var(--green1);
+  background-color: var(--p1);
 `;
 
 export const Logo = styled.div`
@@ -15,7 +15,7 @@ export const Logo = styled.div`
   a :nth-child(1) {
     font-size: 2rem;
     letter-spacing: 0.05rem;
-    color: var(--green4);
+    color: var(--p4);
     text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
   }
 
@@ -23,7 +23,7 @@ export const Logo = styled.div`
     font-weight: 700;
     font-size: 0.875rem;
     letter-spacing: 0.05rem;
-    color: var(--green3);
+    color: var(--p3);
   }
 `;
 
@@ -35,11 +35,11 @@ export const Media = styled.ul`
 `;
 
 export const Location = styled.div`
-  background-color: var(--green1);
+  background-color: var(--p1);
 `;
 
 export const Card = styled.div`
-  background-color: var(--green5);
+  background-color: var(--p5);
   margin: 0 10px;
   padding: 10px;
   border-radius: 20px;

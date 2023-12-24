@@ -2,16 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --green1: #80BFBF;
-    --green2: #4C9696;
-    --green3: #247070;
-    --green4: #0C4B4B;
-    --green5: #002D2D;
-    --purple1: #AB3CF5;
-    --purple2: #9219E2;
-    --purple3: #6900AE;
-    --purple4: #4B017B;
-    --purple5: #3D0960;
+    --p1: #80BFBF;
+    --p2: #4C9696;
+    --p3: #247070;
+    --p4: #0C4B4B;
+    --p5: #002D2D;
+    --s1: #AB3CF5;
+    --s2: #9219E2;
+    --s3: #6900AE;
+    --s4: #4B017B;
+    --s5: #3D0960;
     --font12: clamp(0.75rem, 1vw, 1rem);
     --font16: clamp(1rem, 2vw, 2rem);
     --font20: clamp(1.25rem, 2.5vw, 2.5rem);
@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    background-color: var(--green3);
+    background-color: var(--p3);
     scroll-behavior: smooth;
     overflow-x: hidden;
   }

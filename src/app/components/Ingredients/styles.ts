@@ -9,7 +9,7 @@ export const Title = styled.h2`
   font-size: var(--font40);
   font-weight: 500;
 
-  color: var(--green3);
+  color: var(--p3);
   width: max-content;
   margin: 0 auto;
   padding: 100px 0;
@@ -39,13 +39,13 @@ export const IngredientsList = styled.ul`
   }
 
   #flour {
-    background-color: var(--purple5);
+    background-color: var(--s5);
     color: #f4c8cd;
   }
 
   #egg {
     background-color: #fd5c5c;
-    color: var(--purple4);
+    color: var(--s4);
   }
 
   #seasoning {
@@ -54,7 +54,7 @@ export const IngredientsList = styled.ul`
   }
 
   #love {
-    background-color: var(--purple2);
+    background-color: var(--s2);
     color: #fff;
   }
 

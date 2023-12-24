@@ -27,7 +27,7 @@ export const Title = styled.h1`
 
   span {
     font-size: var(--font16);
-    color: var(--green2);
+    color: var(--p2);
   }
 
   @media screen and (min-width: 1000px) {

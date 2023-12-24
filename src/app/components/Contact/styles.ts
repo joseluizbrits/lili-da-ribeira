@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background: linear-gradient(to bottom, #fff 35%, var(--green4));
+  background: linear-gradient(to bottom, #fff 35%, var(--p4));
   height: 600px;
 
   display: flex;
@@ -25,7 +25,7 @@ export const Title = styled.h2`
   line-height: 1.25em;
   letter-spacing: 0.05rem;
   text-align: center;
-  color: var(--purple3);
+  color: var(--s3);
   max-width: 21ch;
 `;
 
@@ -35,7 +35,7 @@ export const Button = styled.a`
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 
-  background: var(--purple3);
+  background: var(--s3);
   color: #f4c8cd;
   padding: 16px 32px;
   border-radius: 30px;

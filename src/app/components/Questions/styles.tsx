@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: var(--green1);
+  background-color: var(--p1);
 `;
 
 export const Title = styled.h2`
@@ -9,7 +9,7 @@ export const Title = styled.h2`
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
   text-align: end;
-  color: var(--green2);
+  color: var(--p2);
   margin-right: 32px;
 `;
 
@@ -27,7 +27,7 @@ export const Question = styled.section`
 
   h3 {
     font-size: 0.875rem;
-    color: var(--green5);
+    color: var(--p5);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -38,7 +38,7 @@ export const Question = styled.section`
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: var(--purple3);
+      background-color: var(--s3);
       margin-top: -1px;
     }
   }
@@ -77,7 +77,7 @@ export const Question = styled.section`
 `;
 
 export const Separator = styled.hr`
-  border: 1px solid var(--green2);
+  border: 1px solid var(--p2);
   opacity: 0.2;
   margin-bottom: 16px;
 `;
