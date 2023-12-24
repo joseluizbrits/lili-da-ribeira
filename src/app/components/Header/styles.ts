@@ -6,6 +6,10 @@ export const Wrapp = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 1000px) {
+    padding: 20px 10%;
+  }
 `;
 
 export const Logo = styled.span`

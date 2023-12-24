@@ -29,6 +29,11 @@ export const Title = styled.h1`
     font-size: var(--font16);
     color: var(--green2);
   }
+
+  @media screen and (min-width: 1000px) {
+    padding-left: 240px;
+    max-width: 26ch;
+  }
 `;
 
 export const Waves = styled.div`
