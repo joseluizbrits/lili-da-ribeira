@@ -53,7 +53,7 @@ function Footer() {
           </Address>
           <Copyright className={nunito.className}>
             © Copyright {new Date().getFullYear()} -{" "}
-            {new Date().getFullYear() + 1} | Ana & Bia | Todos os Direitos
+            {new Date().getFullYear() + 1} | Lili da Ribeira | Todos os Direitos
             Reservados | Criado por BRITS
           </Copyright>
         </Card>
