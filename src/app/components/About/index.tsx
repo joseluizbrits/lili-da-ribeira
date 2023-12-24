@@ -21,8 +21,9 @@ function About() {
           <ImageWrapper key={id} id={id}>
             <Image
               src={img}
-              fill
               alt={alt}
+              fill
+              priority
               style={{ objectFit: "cover", borderRadius: "20px" }}
             />
             <p>{desc}</p>
@@ -38,6 +39,7 @@ function About() {
           src={handsOn}
           alt="Mãos da Lili da Ribeira apertando a massa"
           fill
+          priority
         />
       </HandsOn>
     </Container>

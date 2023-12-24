@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
     --font20: clamp(1.25rem, 2.5vw, 2.5rem);
     --font24: clamp(1.5rem, 4vw, 4rem);
     --font40: clamp(2.5rem, 5.5vw, 5.5rem);
+    --font56: clamp(3.25rem, 6vw, 6rem);
     --space10: 3%;
     --space20: 6%;
     --space32: 8%;

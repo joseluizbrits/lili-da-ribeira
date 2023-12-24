@@ -30,6 +30,10 @@ export const Content = styled.div`
   min-height: 780px;
   position: relative;
   z-index: 1;
+
+  @media screen and (min-width: 1000px) {
+    margin: 0 10%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -54,7 +58,7 @@ export const Paragraph = styled.p`
 
   @media screen and (min-width: 1000px) {
     font-size: 2.5rem;
-    max-width: 25ch;
+    margin-top: -32px;
   }
 `;
 
