@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
     --space10: 3%;
     --space20: 6%;
     --space32: 8%;
+    --space60: 16%;
   }
 
  * {

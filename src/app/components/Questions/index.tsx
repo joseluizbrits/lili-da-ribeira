@@ -7,7 +7,6 @@ import { useState } from "react";
 
 import Fish from "@/app/icons/Fish";
 import Plus from "@/app/icons/Plus";
-import Waves from "@/app/icons/Waves";
 import questions from "@/app/utils/questions";
 
 function Questions() {
@@ -27,7 +26,6 @@ function Questions() {
     <>
       <Sea>
         <Fish />
-        <Waves rotate />
       </Sea>
       <Container>
         <Title>Alguma dúvida?</Title>

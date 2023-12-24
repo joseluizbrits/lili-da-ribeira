@@ -7,6 +7,10 @@ export const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1000px) {
+    height: 800px;
+  }
 `;
 
 export const Content = styled.div`

@@ -3,7 +3,7 @@ const questions = [
     id: "q1",
     question: "Quais são os  métodos de pagamento?",
     answer:
-      "Cumque dignissimos ratione assumenda ducimus quidem, provident reprehenderit saepe, eveniet eius aperiam iure itaque praesentium quam ipsam cupiditate. Tempora reiciendis sunt asperiores!",
+      "Cumque dignissimos ratione assumenda ducimus quidem, provident reprehenderit saepe, eveniet eius aperiam iure itaque praesentium quam ipsam cupiditate.",
   },
   {
     id: "q2",
