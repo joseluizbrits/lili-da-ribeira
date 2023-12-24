@@ -38,7 +38,7 @@ export const Waves = styled.div`
 
   grid-area: 1/1;
 
-  @media screen and (min-width: 430px) {
+  @media screen and (min-width: 440px) {
     min-height: 300px;
     background: url(${wavesMiddle.src}) no-repeat;
   }
