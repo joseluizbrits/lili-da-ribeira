@@ -16,10 +16,11 @@ function Questions() {
   function handleQuestion(e: React.MouseEvent<HTMLElement>) {
     if (!e.currentTarget) return;
 
-    if (e.currentTarget.id === activeQuestion) return setActiveQuestion("");
+    const question = e.currentTarget.id;
 
-    const questionId = e.currentTarget.id;
-    return setActiveQuestion(questionId);
+    if (question === activeQuestion) return setActiveQuestion("");
+
+    return setActiveQuestion(question);
   }
 
   return (

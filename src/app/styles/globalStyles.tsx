@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     --purple3: #6900AE;
     --purple4: #4B017B;
     --purple5: #3D0960;
+    --font12: clamp(0.75rem, 1vw, 1rem);
     --font16: clamp(1rem, 2vw, 2rem);
     --font20: clamp(1.25rem, 2.5vw, 2.5rem);
     --font24: clamp(1.5rem, 4vw, 4rem);

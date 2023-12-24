@@ -21,7 +21,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: var(--font24);
   line-height: 1.25em;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -31,7 +31,7 @@ export const Title = styled.h2`
 
 export const Button = styled.a`
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: var(--font12);
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 
