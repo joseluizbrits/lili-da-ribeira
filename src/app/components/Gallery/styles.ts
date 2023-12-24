@@ -2,7 +2,7 @@ import styled from "styled-components";
 import arrowCircle from "../../../../public/arrow-circle.svg";
 
 export const Container = styled.section`
-  padding: 40px 0 126px var(--space10);
+  padding: 64px 0 146px var(--space10);
   overflow-x: hidden;
 
   .swiper {
@@ -74,7 +74,7 @@ export const Container = styled.section`
   }
 
   @media screen and (min-width: 1000px) {
-    padding: 40px 0 126px 10%;
+    padding: 80px 0 146px 10%;
 
     .swiper {
       width: 50vw;
