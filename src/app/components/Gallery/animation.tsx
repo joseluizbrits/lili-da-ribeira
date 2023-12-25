@@ -3,17 +3,58 @@ import gsap from "gsap";
 
 function Animation() {
   useLayoutEffect(() => {
-    gsap.defaults({
-      ease: "power1.out",
-      duration: 0.6,
-    });
-
     const ctx = gsap.context(() => {
-      gsap.from(".swiper", {
-        y: 100,
-        opacity: 0,
-        delay: 1,
+      gsap.defaults({
+        ease: "power1.out",
+        duration: 0.6,
       });
+
+      gsap
+        .timeline()
+        .fromTo(
+          ".swiper",
+          {
+            y: 100,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            delay: 1,
+          }
+        )
+        .from(
+          ".swiper .desc",
+          {
+            y: 20,
+            opacity: 0,
+          },
+          "<=0.4"
+        )
+        .from(
+          ".swiper .label",
+          {
+            y: 20,
+            opacity: 0,
+          },
+          "<+0.4"
+        )
+        .from(
+          ".swiper-button-prev",
+          {
+            y: 20,
+            opacity: 0,
+          },
+          "<+0.4"
+        )
+        .from(
+          ".swiper-button-next",
+          {
+            y: 20,
+            opacity: 0,
+          },
+          "<+0.1"
+        );
     });
 
     return () => ctx.revert();

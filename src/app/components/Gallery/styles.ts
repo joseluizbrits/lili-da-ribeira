@@ -9,6 +9,8 @@ export const Container = styled.section`
     height: 100%;
     width: 80vw;
     cursor: grab;
+
+    opacity: 0;
   }
 
   .swiper-wrapper {
@@ -55,12 +57,16 @@ export const Container = styled.section`
     cursor: pointer;
 
     position: absolute;
-    right: 24px;
+    bottom: -64px;
   }
 
   .swiper-button-prev {
     rotate: 180deg;
-    right: 66px;
+    right: calc(40px - 14%);
+  }
+
+  .swiper-button-next {
+    right: -14%;
   }
 
   @media screen and (min-width: 440px) {
@@ -73,11 +79,11 @@ export const Container = styled.section`
     }
 
     .swiper-button-prev {
-      right: 162px;
+      right: calc(40px - 49%);
     }
 
     .swiper-button-next {
-      right: 120px;
+      right: -49%;
     }
   }
 
@@ -94,14 +100,6 @@ export const Container = styled.section`
 
     .swiper-wrapper {
       gap: 64px;
-    }
-
-    .swiper-button-prev {
-      right: 258px;
-    }
-
-    .swiper-button-next {
-      right: 216px;
     }
   }
 `;

@@ -20,8 +20,12 @@ function Gallery() {
           <SwiperSlide key={id}>
             <Image src={img} alt={alt} fill priority />
             <Description>
-              <Label className={nunito.className}>Muito saborosa</Label>
-              <Text>Massa com textura delicada e sabor autentico</Text>
+              <Label className={nunito.className + " label"}>
+                Muito saborosa
+              </Label>
+              <Text className="desc">
+                Massa com textura delicada e sabor autentico
+              </Text>
             </Description>
           </SwiperSlide>
         ))}
