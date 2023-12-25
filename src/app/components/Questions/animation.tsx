@@ -56,7 +56,6 @@ function Animation(questions: QuestionsType) {
             trigger: `#${id}-anime`,
             start: "-=60px 90%",
             end: "bottom 90%",
-            markers: true,
           },
           y: 60,
           opacity: 0,
