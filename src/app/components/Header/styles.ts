@@ -7,20 +7,6 @@ export const Wrapp = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  a,
-  svg {
-    animation: down 1s ease-out forwards;
-  }
-
-  @keyframes down {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   @media screen and (min-width: 1000px) {
     padding: 20px 10%;
   }

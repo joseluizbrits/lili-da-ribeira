@@ -27,7 +27,6 @@ function Animation() {
           trigger: "#contact a",
           start: "-=80px 90%",
           end: "bottom center",
-          markers: true,
         },
         y: 60,
         opacity: 0,

@@ -23,9 +23,10 @@ function Animation(storyDescriptions: storyDescriptionsType) {
 
       gsap.from("#about h2", {
         scrollTrigger: {
-          trigger: "#about",
-          start: "top 80%",
+          trigger: "#about h2",
+          start: "+=40px 80%",
           end: "bottom center",
+          markers: true,
         },
         y: 60,
         opacity: 0,
