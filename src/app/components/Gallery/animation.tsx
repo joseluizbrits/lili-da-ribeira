@@ -20,7 +20,7 @@ function Animation() {
           {
             y: 0,
             opacity: 1,
-            delay: 1,
+            delay: 0.6,
           }
         )
         .from(

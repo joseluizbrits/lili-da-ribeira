@@ -9,8 +9,8 @@ function Animation() {
         duration: 0.6,
       });
 
-      gsap.from("#hero > *", {
-        x: -40,
+      gsap.from("#hero h1", {
+        x: -60,
         opacity: 0,
       });
     });
