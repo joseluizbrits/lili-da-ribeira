@@ -11,7 +11,7 @@ import questions from "@/app/utils/questions";
 import Animation from "./animation";
 
 function Questions() {
-  Animation();
+  Animation(questions);
 
   const [activeQuestion, setActiveQuestion] = useState("");
 
@@ -34,7 +34,7 @@ function Questions() {
         <Title>Alguma dúvida?</Title>
         <FAQ>
           {questions.map(({ id, question, answer }, index) => (
-            <div key={id}>
+            <div key={id} id={`${id}-anime`}>
               <Question
                 id={id}
                 className={activeQuestion === id ? "active" : ""}
