@@ -1,11 +1,15 @@
 "use client";
 
-import { nunito } from "@/app/lib/fonts";
 import { Container, Description, List, Name, Title } from "./styles";
+import Animation from "./animation";
+
+import { nunito } from "@/app/lib/fonts";
 import { ingredients } from "@/app/utils/ingredients";
 import { useState } from "react";
 
 function Ingredients() {
+  Animation(ingredients);
+
   const [activeItem, setActiveItem] = useState("");
 
   function handleItem(e: React.MouseEvent<HTMLElement>) {
@@ -19,7 +23,7 @@ function Ingredients() {
   }
 
   return (
-    <Container>
+    <Container id="ingredients">
       <Title>Ingredientes</Title>
       <List>
         {ingredients.map(({ id, name, desc, icon, arrow }) => (
