@@ -8,13 +8,17 @@ import {
   LastDescription,
   Title,
 } from "./styles";
+
 import Image from "next/image";
 import storyDescriptions from "@/app/utils/storyDescriptions";
 import handsOn from "../../../../public/hands-on.png";
+import Animation from "./animation";
 
 function About() {
+  Animation(storyDescriptions);
+
   return (
-    <Container>
+    <Container id="about">
       <Title>Sobre Lili</Title>
       <Content>
         {storyDescriptions.map(({ id, img, alt, desc }) => (
@@ -29,7 +33,7 @@ function About() {
             <p>{desc}</p>
           </ImageWrapper>
         ))}
-        <LastDescription>
+        <LastDescription className="last-paragraph">
           Com sua pegada artesanal ela faz uma massa única através do sabor do
           autêntico bacalhau
         </LastDescription>
