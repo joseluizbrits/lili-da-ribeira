@@ -40,6 +40,7 @@ function About() {
       </Content>
       <HandsOn>
         <Image
+          className="hands-on"
           src={handsOn}
           alt="Mãos da Lili da Ribeira apertando a massa"
           fill

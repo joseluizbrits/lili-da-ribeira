@@ -58,10 +58,20 @@ function Animation(storyDescriptions: storyDescriptionsType) {
           trigger: "#about .last-paragraph",
           start: "top 90%",
           end: "bottom center",
-          markers: true,
         },
         y: 60,
         opacity: 0,
+      });
+
+      gsap.from(".hands-on", {
+        scrollTrigger: {
+          trigger: ".hands-on",
+          start: "top 70%",
+          end: "bottom center",
+          scrub: true,
+          markers: true,
+        },
+        x: 300,
       });
     });
 

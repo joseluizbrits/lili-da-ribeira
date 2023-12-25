@@ -123,6 +123,7 @@ export const HandsOn = styled.div`
   width: clamp(268px, 31vw, 960px);
   height: clamp(345px, 40vw, 1240px);
 
+  overflow-x: hidden;
   position: absolute;
   bottom: -160px;
   right: 0;
