@@ -15,7 +15,7 @@ function Animation() {
       gsap.from("#contact h2", {
         scrollTrigger: {
           trigger: "#contact h2",
-          start: "top 90%",
+          start: "-=60px 90%",
           end: "bottom center",
         },
         y: 60,
@@ -25,8 +25,9 @@ function Animation() {
       gsap.from("#contact a", {
         scrollTrigger: {
           trigger: "#contact a",
-          start: "top 90%",
+          start: "-=80px 90%",
           end: "bottom center",
+          markers: true,
         },
         y: 60,
         opacity: 0,

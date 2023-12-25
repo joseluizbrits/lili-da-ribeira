@@ -58,7 +58,6 @@ function Animation(storyDescriptions: storyDescriptionsType) {
           trigger: "#about .last-paragraph",
           start: "-=80px 90%",
           end: "bottom center",
-          markers: true,
         },
         y: 60,
         opacity: 0,
