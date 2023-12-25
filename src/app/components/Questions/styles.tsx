@@ -146,8 +146,11 @@ export const Sea = styled.div`
   display: flex;
   flex-direction: column;
 
+  overflow-x: hidden;
+
   #fish {
     margin-bottom: -80px;
+    transform: translate(-100px, 60px);
   }
 
   &::after {

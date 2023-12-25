@@ -8,8 +8,11 @@ import { useState } from "react";
 import Fish from "@/app/icons/Fish";
 import Plus from "@/app/icons/Plus";
 import questions from "@/app/utils/questions";
+import Animation from "./animation";
 
 function Questions() {
+  Animation();
+
   const [activeQuestion, setActiveQuestion] = useState("");
 
   function handleQuestion(e: React.MouseEvent<HTMLElement>) {
@@ -27,7 +30,7 @@ function Questions() {
       <Sea>
         <Fish />
       </Sea>
-      <Container>
+      <Container id="questions">
         <Title>Alguma dúvida?</Title>
         <FAQ>
           {questions.map(({ id, question, answer }, index) => (

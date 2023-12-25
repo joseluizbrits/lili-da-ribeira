@@ -69,7 +69,6 @@ function Animation(storyDescriptions: storyDescriptionsType) {
           start: "top 70%",
           end: "bottom center",
           scrub: true,
-          markers: true,
         },
         x: 300,
       });
