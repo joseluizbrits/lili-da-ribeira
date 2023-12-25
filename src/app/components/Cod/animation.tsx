@@ -37,7 +37,6 @@ function Animation() {
           trigger: "#cod a",
           start: "-=80px 80%",
           end: "bottom center",
-          markers: true,
         },
         y: 60,
         opacity: 0,

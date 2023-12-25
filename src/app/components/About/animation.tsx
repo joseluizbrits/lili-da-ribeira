@@ -35,7 +35,7 @@ function Animation(storyDescriptions: storyDescriptionsType) {
         gsap.from(`#${id} img`, {
           scrollTrigger: {
             trigger: `#${id} img`,
-            start: "top 90%",
+            start: "-=80px 90%",
             end: "bottom center",
           },
           y: 60,
@@ -56,8 +56,9 @@ function Animation(storyDescriptions: storyDescriptionsType) {
       gsap.from("#about .last-paragraph", {
         scrollTrigger: {
           trigger: "#about .last-paragraph",
-          start: "top 90%",
+          start: "-=80px 90%",
           end: "bottom center",
+          markers: true,
         },
         y: 60,
         opacity: 0,
