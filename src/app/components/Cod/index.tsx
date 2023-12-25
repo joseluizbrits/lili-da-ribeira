@@ -1,11 +1,14 @@
 "use client";
 
-import { nunito } from "@/app/lib/fonts";
 import { Button, Container, Content, Paragraph, Title } from "./styles";
+import Animation from "./animation";
+import { nunito } from "@/app/lib/fonts";
 
 function Cod() {
+  Animation();
+
   return (
-    <Container>
+    <Container id="cod">
       <Content>
         <Title>Bacalhau autêntico</Title>
         <Paragraph>
