@@ -14,7 +14,7 @@ function Animation() {
 
       gsap.from("#cod h2", {
         scrollTrigger: {
-          trigger: "#cod",
+          trigger: "#cod h2",
           start: "top 80%",
           end: "bottom center",
         },
@@ -25,7 +25,7 @@ function Animation() {
       gsap.from("#cod p", {
         scrollTrigger: {
           trigger: "#cod p",
-          start: "top 90%",
+          start: "-=60px 80%",
           end: "bottom center",
         },
         y: 60,
@@ -35,8 +35,9 @@ function Animation() {
       gsap.from("#cod a", {
         scrollTrigger: {
           trigger: "#cod a",
-          start: "to bottom",
+          start: "-=80px 80%",
           end: "bottom center",
+          markers: true,
         },
         y: 60,
         opacity: 0,
