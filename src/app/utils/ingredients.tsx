@@ -1,4 +1,4 @@
-import Flour from "../icons/Flour";
+import Potato from "../icons/Potato";
 import Egg from "@/app/icons/Egg";
 import Vegetable from "@/app/icons/Vegetable";
 import Heart from "@/app/icons/Heart";
@@ -6,10 +6,10 @@ import Arrow from "../icons/Arrow";
 
 export const ingredients = [
   {
-    id: "flour",
-    name: "Farinha de Qualidade",
+    id: "potato",
+    name: "Batata de Qualidade",
     desc: "Selecionada com cuidado para garantir a textura perfeita",
-    icon: <Flour />,
+    icon: <Potato />,
     arrow: <Arrow color="#9219E2" />,
   },
   {

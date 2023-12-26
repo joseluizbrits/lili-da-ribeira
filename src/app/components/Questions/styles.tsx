@@ -43,6 +43,7 @@ export const Question = styled.section`
 
   h3 {
     font-size: 0.875rem;
+    line-height: 1.25em;
     color: var(--p5);
 
     display: flex;

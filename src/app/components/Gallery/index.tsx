@@ -16,16 +16,12 @@ function Gallery() {
   return (
     <Container>
       <Swiper slidesPerView={1} navigation={true} modules={[Navigation]}>
-        {gallery.map(({ id, img, alt }) => (
+        {gallery.map(({ id, img, alt, label, desc }) => (
           <SwiperSlide key={id}>
             <Image src={img} alt={alt} fill priority />
             <Description>
-              <Label className={nunito.className + " label"}>
-                Muito saborosa
-              </Label>
-              <Text className="desc">
-                Massa com textura delicada e sabor autentico
-              </Text>
+              <Label className={nunito.className + " label"}>{label}</Label>
+              <Text className="desc">{desc}</Text>
             </Description>
           </SwiperSlide>
         ))}

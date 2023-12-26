@@ -30,12 +30,12 @@ function Footer() {
       </Logo>
       <Media>
         <li>
-          <Link href="#">
+          <Link href="https://www.facebook.com/liane.ribeiro.12?mibextid=ZbWKwL">
             <Facebook />
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="https://api.whatsapp.com/send?phone=5521994056843&text=Quero%20reservar%20a%20minha%20encomenda">
             <Whatsapp />
           </Link>
         </li>

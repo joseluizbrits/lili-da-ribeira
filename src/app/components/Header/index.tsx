@@ -10,7 +10,7 @@ function Header() {
     <header>
       <Wrapp>
         <Logo className={wendy_one.className}>Lili da Ribeira</Logo>
-        <Link href="#">
+        <Link href="https://api.whatsapp.com/send?phone=5521994056843&text=Quero%20reservar%20a%20minha%20encomenda">
           <WhatsappColored />
         </Link>
       </Wrapp>

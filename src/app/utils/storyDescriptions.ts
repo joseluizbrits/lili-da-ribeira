@@ -13,7 +13,7 @@ const storyDescriptions = [
     id: "story2",
     img: img2,
     alt: "Mesa com um prato de bolinhos de bacalhau e uma taça de cerveja no fundo",
-    desc: "Ama apreciar um bom bolinho, rodeada de daqueles que a fazem sorrir",
+    desc: "Ama apreciar um bom bolinho junto daqueles que a fazem sorrir",
   },
   {
     id: "story3",

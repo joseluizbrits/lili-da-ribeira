@@ -15,7 +15,10 @@ function Cod() {
           Lili da Ribeira usa o melhor do sabor do mar. Perfeito para festas,
           reuniões entre amigos e momentos especiais em família
         </Paragraph>
-        <Button href="#" className={nunito.className}>
+        <Button
+          href="https://api.whatsapp.com/send?phone=5521994056843&text=Quero%20reservar%20a%20minha%20encomenda"
+          className={nunito.className}
+        >
           Encomende sua massa
         </Button>
       </Content>

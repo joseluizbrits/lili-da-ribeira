@@ -53,12 +53,12 @@ export const Name = styled.div`
     transition: 0.3s ease;
   }
 
-  &#flour {
+  &#potato {
     background-color: var(--s5);
     color: #f4c8cd;
   }
 
-  &#flour.active {
+  &#potato.active {
     background-color: #44046d;
   }
 
@@ -117,7 +117,7 @@ export const Description = styled.div`
   height: 0;
   transition: 0.3s ease;
 
-  &#flour-desc {
+  &#potato-desc {
     background-color: var(--s5);
   }
 

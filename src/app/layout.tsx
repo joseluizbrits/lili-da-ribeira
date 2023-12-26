@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: "Encomenda de Massa para Bolinho de Bacalhau | Lili da Ribeira",
   description:
     "Massa para bolinho de bacalhau já pronta, feita com carinho artesanal carregado de tradição familiar. Perfeito para a suas festas e comemorações!",
-  keywords: ["Bacalhau", "Bolinho", "Massa"],
+  keywords: ["Bacalhau", "Bolinho", "Massa", "Bolinho de bacalhau"],
   alternates: {
     canonical: "/",
     languages: {
       "pt-BR": "/pt-BR",
     },
   },
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://lilidaribeira.com.br"),
   openGraph: {
     title: "Encomenda de Massa para Bolinho de Bacalhau | Lili da Ribeira",
     description:
