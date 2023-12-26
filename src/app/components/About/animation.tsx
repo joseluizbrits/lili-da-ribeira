@@ -26,7 +26,6 @@ function Animation(storyDescriptions: storyDescriptionsType) {
           trigger: "#about h2",
           start: "+=40px 80%",
           end: "bottom center",
-          markers: true,
         },
         y: 60,
         opacity: 0,
