@@ -27,7 +27,7 @@ const questions = [
     id: "q5",
     question: "Qual é a durabilidade da massa?",
     answer:
-      "A massa pode durar até 3 dias, porém ela deve ser colocada em um freeze já modelada como bolinho",
+      "A massa pode durar até 3 dias, porém ela deve ser colocada em um freeze já modelada como bolinho.",
   },
 ];
 

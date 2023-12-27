@@ -2,7 +2,6 @@
 import { nunito } from "@/app/lib/fonts";
 import { Button, Container, Content, Title } from "./styles";
 import Animation from "./animation";
-import Link from "next/link";
 
 function Contact() {
   Animation();

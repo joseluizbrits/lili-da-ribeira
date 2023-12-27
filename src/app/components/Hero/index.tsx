@@ -2,11 +2,7 @@
 
 import { Title, Container } from "./styles";
 
-import Animation from "./animation";
-
 function Hero() {
-  Animation();
-
   return (
     <Container id="hero">
       <Title>

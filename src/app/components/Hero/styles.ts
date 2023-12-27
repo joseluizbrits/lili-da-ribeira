@@ -49,9 +49,22 @@ export const Title = styled.h1`
   position: relative;
   z-index: 1;
 
+  animation: show 1s ease forwards;
+
   span {
     font-size: var(--font16);
     color: var(--p2);
+  }
+
+  @keyframes show {
+    from {
+      transform: translateX(-60px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   @media screen and (min-width: 1000px) {
