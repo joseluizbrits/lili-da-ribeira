@@ -3,7 +3,7 @@ import codMobile from "../../../../public/cod-mobile.jpg";
 import codDesktop from "../../../../public/cod-desktop.jpg";
 
 export const Container = styled.section`
-  background: url(${codMobile.src}) fixed;
+  background: url(${codMobile.src}) fixed center center;
   background-size: cover;
   min-height: 780px;
 
