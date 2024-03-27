@@ -3,7 +3,7 @@ import arrowCircle from "../../../../public/arrow-circle.svg";
 
 export const Container = styled.section`
   padding: 64px 0 146px var(--space10);
-  overflow-x: hidden;
+  overflow: hidden;
 
   .swiper {
     height: 100%;
